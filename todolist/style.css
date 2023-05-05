@@ -5,6 +5,7 @@
 }
 
 body{
+   padding: 0 20px;
    height: 100vh;
    display: flex;
    align-items: center;
@@ -19,6 +20,7 @@ span{
 }
 
 .wrapper{
+   width: 300px;
    font-family: "Poppins", sans-serif;
    padding: 20px;
    background-color: #FFF;
@@ -99,6 +101,10 @@ span{
    border-radius: 2px;
 }
 
+.task input:checked + label{
+   text-decoration: line-through;
+}
+
 .task input:checked + label::before{
    border: 1px solid #4AF763;
    background-color: #4AF763;
@@ -121,5 +127,3 @@ button{
    background-color: #4AF763;
    color: #000;
 }
-
-
