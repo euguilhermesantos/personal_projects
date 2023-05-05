@@ -1,0 +1,125 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #587BF8;
+}
+
+span{
+   font-size: 15px;
+   font-weight: 600;
+   color: #1D1A1A;
+}
+
+.wrapper{
+   font-family: "Poppins", sans-serif;
+   padding: 20px;
+   background-color: #FFF;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   display: grid;
+   gap: 10px;
+}
+
+.add{
+   padding: 10px;
+   border: 1px solid #ACACAC;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.icon{
+   font-size: 18px;
+}
+
+.icon.ph-check-square-offset,
+.type::placeholder{
+   color: #ACACAC;
+}
+
+.content{
+   display: grid;
+   gap: 10px;
+}
+
+.type{
+   outline: none;
+   border: none;
+   font-size: 16px;
+}
+
+.pending,
+.pending-tasks{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.tasks-list{
+   max-height: 200px;
+   overflow-y: scroll;
+   list-style: none;
+}
+
+.tasks-list::-webkit-scrollbar{
+   display: none;
+}
+
+.task{
+   padding: 10px;
+   border-top: 1px solid #dddddd;
+}
+
+.task input{
+   display: none;
+}
+
+.task label{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   user-select: none;
+   cursor: pointer;
+}
+
+.task input + label::before{
+   content: "";
+   width: 15px;
+   height: 15px;
+   border: 1px solid #000;
+   display: inline-block;
+   border-radius: 2px;
+}
+
+.task input:checked + label::before{
+   border: 1px solid #4AF763;
+   background-color: #4AF763;
+}
+
+.button-container{
+   display: grid;
+   justify-self: flex-end;
+}
+
+button{
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   cursor: pointer;
+   font-size: 15px;
+   border: none;
+   border-radius: 5px;
+   background-color: #4AF763;
+   color: #000;
+}
+
+

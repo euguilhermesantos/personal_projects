@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="app.js" defer></script>
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="add">
+          <i class="ph ph-check-square-offset icon"></i>
+          <input class="type" type="text" placeholder="Add a new task..." />
+        </div>
+
+        <div class="pending">Pending Tasks: <span class="pending-tasks">0</span></div>
+
+        <ul class="tasks-list"></ul>
+      </div>
+
+      <div class="button-container">
+         <button class="remove">
+            <i class="ph ph-trash icon"></i>
+         </button>
+      </div>
+    </div>
+  </body>
+</html>
